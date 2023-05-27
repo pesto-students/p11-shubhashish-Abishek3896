@@ -1,12 +1,12 @@
 class Person {
   constructor(name, age, gender, nationality) {
-    this.Name = name;
-    this.Age = age;
-    this.Gender = gender;
-    this.Nationality = nationality;
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.nationality = nationality;
   }
   introduce() {
-    return `${this.Name} is ${this.Age} years old, ${this.Gender} and ${this.Nationality}.`;
+    return `${this.name} is ${this.age} years old, ${this.gender} and ${this.nationality}.`;
   }
 }
 const person1 = new Person('Rahul', 35, 'Male', 'Indian');
@@ -22,10 +22,10 @@ console.log(person1.introduce(), person2.introduce(), person3.introduce());
 class Student extends Person {
   constructor(name, age, gender, nationality, subject) {
     super(name, age, gender, nationality);
-    this.Subject = subject;
+    this.subject = subject;
   }
   study() {
-    return `studies ${this.Subject}.`;
+    return `studies ${this.subject}.`;
   }
 }
 const student1 = new Student('Phil', 21, 'Male', 'American', 'Biology');

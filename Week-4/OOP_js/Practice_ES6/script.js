@@ -1,10 +1,10 @@
 //Session-1 Inheritance
 class Vehicle {
-  constructor(Make, Model, Year, Color) {
-    this.make = Make;
-    this.model = Model;
-    this.year = Year;
-    this.color = Color;
+  constructor(make, model, year, color) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.color = color;
   }
   drive() {
     console.log(`Driving {${this.make}} {${this.model}}`);
@@ -12,15 +12,15 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-  constructor(Make, Model, Year, Color, NumSeats) {
-    super(Make, Model, Year, Color);
-    this.numSeats = NumSeats;
+  constructor(make, model, year, color, numSeats) {
+    super(make, model, year, color);
+    this.numSeats = numSeats;
   }
 }
 
 class RideShareCar extends Car {
-  constructor(Make, Model, Year, Color, NumSeats, isAvail) {
-    super(Make, Model, Year, Color, NumSeats);
+  constructor(make, model, year, color, numSeats, isAvail) {
+    super(make, model, year, color, numSeats);
     this.isAvaliable = isAvail;
   }
 }

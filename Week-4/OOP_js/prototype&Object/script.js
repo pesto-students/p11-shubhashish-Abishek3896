@@ -19,8 +19,8 @@ Object.defineProperty(person, 'age', {
 const getAge = ({ name, age, email }) => {
   return age;
 };
-const setAge = Age => {
-  person.age = Age;
+const setAge = age => {
+  person.age = age;
 };
 
 //JavaScript Prototype

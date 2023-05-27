@@ -1,11 +1,11 @@
-const Counter = () => {
-  let Count = 1;
+const counter = () => {
+  let count = 1;
   return function incrementbyOne() {
-    return Count++;
+    return count++;
   };
 };
-const firstCounter = Counter();
-const secondCounter = Counter();
+const firstCounter = counter();
+const secondCounter = counter();
 const firstValues = [
   firstCounter(),
   firstCounter(),

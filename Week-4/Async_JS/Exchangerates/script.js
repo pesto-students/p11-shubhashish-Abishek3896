@@ -4,13 +4,15 @@ async function getExchangeRate(currencyCode) {
     const output = await response.json();
     const rates = output.rates;
     if (rates.hasOwnProperty(currencyCode)) {
-      console.log(rates[currencyCode].toPrecision(5));
+      //console.log(rates[currencyCode].toPrecision(5));
       return rates[currencyCode].toPrecision(5);
     } else {
       return null;
     }
     //return output.rates.currencyCode;
   } catch (e) {
-    return 'Error while fetching';
+    return `Error is ${e.message}`;
   }
 }
+
+getExchangeRate('AED');

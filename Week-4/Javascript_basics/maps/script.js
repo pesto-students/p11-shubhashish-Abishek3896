@@ -1,9 +1,9 @@
 const calcWordFrequencies = () => {
-  let question = prompt('Enter the input');
-  if (question) {
-    const questionArray = question.split(' ');
+  let sentence = prompt('Enter the input');
+  if (sentence.length > 1) {
+    const sentenceArray = sentence.split(' ');
     var freq = {};
-    questionArray.map(word => {
+    sentenceArray.map(word => {
       if (freq[word]) {
         freq[word] += 1;
       } else {
@@ -19,3 +19,5 @@ const calcWordFrequencies = () => {
     return 'No input';
   }
 };
+
+calcWordFrequencies();
