@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      View the program's output of the Window object and its properties in the
+      JavaScript console.
+    </p>
+    <script>
+      function displayWindowProperties() {
+        console.log(
+          'The Navigator.userAgent read-only property returns the user agent string for the current browser.'
+        );
+        console.log(
+          'The Screen.width read-only property returns the width of the screen in CSS pixels and the Screen.height read-only property returns the height of the screen in pixels.'
+        );
+        console.log(
+          'The pathname property of the Location interface is a string containing the path of the URL for the location and the href property of the Location interface is a stringifier that returns a string containing the whole URL, and allows the href to be updated.'
+        );
+        console.log(
+          'The read-only sessionStorage property accesses a session Storage object for the current origin. sessionStorage is similar to localStorage; the difference is that while data in localStorage doesnt expire, data in sessionStorage is cleared when the page session ends.'
+        );
+      }
+      window.onload = event => {
+        displayWindowProperties();
+      };
+    </script>
+  </body>
+</html>
