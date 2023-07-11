@@ -1,3 +1,9 @@
+class LinkedList {
+  constructor(value) {
+    this.val = value;
+    this.next = null;
+  }
+}
 function reverseEveryK(head, k) {
   let current = head;
   let previous = null;

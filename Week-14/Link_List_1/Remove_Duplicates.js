@@ -1,3 +1,9 @@
+class LinkedList {
+  constructor(value) {
+    this.val = value;
+    this.next = null;
+  }
+}
 function removeDuplicates(head) {
   let uniqueMap = {};
   let previous = null;

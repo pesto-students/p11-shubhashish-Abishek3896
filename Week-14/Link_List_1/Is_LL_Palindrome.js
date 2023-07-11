@@ -1,3 +1,9 @@
+class LinkedList {
+  constructor(value) {
+    this.val = value;
+    this.next = null;
+  }
+}
 var isPalindrome = function (head) {
   let x = head;
   let y = head;

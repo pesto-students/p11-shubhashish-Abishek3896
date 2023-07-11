@@ -1,3 +1,9 @@
+class LinkedList {
+  constructor(value) {
+    this.val = value;
+    this.next = null;
+  }
+}
 function mergeTwolist(list1, list2) {
   const mergedNode = new ListNode(0);
   let tempNode = mergedNode;
