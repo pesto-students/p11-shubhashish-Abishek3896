@@ -1,0 +1,23 @@
+#board {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 10px;
+  justify-content: center;
+}
+.x {
+  color: red;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.o {
+  color: blue;
+  font-size: xx-large;
+  font-weight: bold;
+}
+#board > div {
+  display: flex;
+  border: 1px solid cornflowerblue;
+  justify-content: center;
+  align-items: center;
+}
